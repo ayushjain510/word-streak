@@ -1,24 +1,50 @@
-# React + Vite
+# WordStreak 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**WordStreak** is a fun, interactive word-guessing game inspired by Wordle. Test your vocabulary, use hints, and keep track of your progress!
 
-Currently, two official plugins are available:
+**[Play WordStreak](https://word-streak.netlify.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+-  Engaging word-guessing gameplay
+-  Helpful hints
+-  Personal statistics and progress tracking
+-  Theme customization
+-  User authentication with Supabase
+-  Automatic progress saving
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript
+- Supabase
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run Locally
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ayushjain510/word-streak.git
+   ```
+2. Navigate to the project:
+   ```bash
+   cd word-streak
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Create a `.env` file in the root directory:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_project_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_publishable_key
+   ```
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-## Refactor notes
-- UI components are split under `src/components/`.
-- Authentication and 404 screens are under `src/pages/`.
-- Word list, feedback, saved-game validation, and stats normalization are under `src/lib/gameLogic.js`.
-- Supabase client is under `src/lib/supabase.js`, matching the import path used by the app.
-- `src/index.css` is intentionally preserved as the single stylesheet for this pass to avoid losing existing forest/cream and dark-mode rules; split it only after visual regression checks.
+## License
+
+No license specified yet.
