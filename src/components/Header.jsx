@@ -1,0 +1,3 @@
+export default function Header({ email, theme, onToggleTheme, onShowStats, onSignOut }) {
+  return <header className="topbar"><div className="brand"><span className="brand-icon">W.</span><span>wordstreak</span></div><div className="account-actions"><span className="account-email">{email}</span><button type="button" className="stats-button" onClick={onShowStats}>▥ Stats</button><button type="button" className="secondary-button" onClick={onSignOut}>Sign out</button><button type="button" className="theme-toggle" onClick={onToggleTheme} aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`} title={`Switch to ${theme === "light" ? "dark" : "light"} mode`}>{theme === "light" ? "🌙 Dark" : "☀️ Light"}</button></div></header>;
+}

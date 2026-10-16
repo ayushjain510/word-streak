@@ -1,0 +1,2 @@
+/* WordStreak design tokens. Existing visual rules remain in ../index.css to preserve the current design. */
+:root { --ws-forest: #244b3b; --ws-forest-deep: #18382c; --ws-cream: #f7f4e9; --ws-ivory: #fffdf6; }
